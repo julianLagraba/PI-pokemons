@@ -37,7 +37,7 @@ export default function Detail(props){
                     <h3>Vida: {myPokemon[0].vida}</h3>
                     <h3>Velocidad: {myPokemon[0].velocidad}</h3>
                     <h3>Altura: {(myPokemon[0].altura)/10}m</h3>
-                    <h3>Peso: {myPokemon[0].peso}g</h3>
+                    <h3>Peso: {myPokemon[0].peso}kg</h3>
                     <h3>Tipos: {myPokemon[0].tipos.map(e=>e.nombre+ " ")} </h3>
                     </div>
                         <Link to= "/home">
