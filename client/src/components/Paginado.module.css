@@ -32,16 +32,18 @@
 	color:rgb(255, 255, 255);
 	background:transparent;
 	text-decoration: none;
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
 }
 
 .paginado ul li a:hover {
-	background:rgb(255, 0, 0, 0.5);
-    border-style: solid;
+	background:rgb(244, 248, 8);
     color:rgb(0, 0, 0);
-    border-width: 1px;
-    border-radius: 10px;
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 .paginado ul li .active {

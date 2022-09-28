@@ -199,11 +199,15 @@ return(
 </div>
 </form>
 <div className={styles.classtype}>
-<ul><li>{input.tipos.map(e=>
-        <div className={styles.quitcard}>
-            <p>{e}</p>
-            <button className={styles.button2} onClick={()=>handleDelete(e)}>x</button>
-        </div> )}            
+<ul><li>{input.tipos.map(tipoId=>{
+            const type = types.find(type => type.id === parseInt(tipoId))
+            return(
+                <div className={styles.quitcard}>
+                    <p>{type.nombre}</p>
+                    <button className={styles.button2} onClick={()=>handleDelete(tipoId)}>x</button>
+                </div>
+            )
+        })}            
         </li></ul>
 </div>
         

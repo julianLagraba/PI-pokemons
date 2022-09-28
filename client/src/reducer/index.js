@@ -34,7 +34,7 @@ function rootReducer (state = intialState, action){
             }
             case 'FILTER_BY_TYPE':
                 const allPokemons = state.allPokemons
-                const typeFilter = action.payload === 'All' ? allPokemons : allPokemons.filter(e => e.tipos.some(e => e.nombre === action.payload));
+                const typeFilter = action.payload === 'todos' ? allPokemons : allPokemons.filter(e => e.tipos.some(e => e.nombre === action.payload));
                 return{
                     ...state,
                     pokemons: typeFilter 
@@ -43,7 +43,7 @@ function rootReducer (state = intialState, action){
                 const createdFilter = action.payload === 'created'? state.allPokemons.filter(el => el.createdInDb) : state.allPokemons.filter(el => !el.createdInDb)
                 return{
                     ...state,
-                    pokemons: action.payload === 'All'? state.allPokemons : createdFilter
+                    pokemons: action.payload === 'todos'? state.allPokemons : createdFilter
                 }
                 case "ORDER_NAME":
             

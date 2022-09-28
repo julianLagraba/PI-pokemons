@@ -1,36 +1,15 @@
 .bg{
-    background: url("./imagenes/bg.jpg")no-repeat center center fixed;
+    background: url("./imagenes/bg.jpg");
     background-color: rgb(32, 30, 30);
     background-size: cover;
-    background-repeat: repeat;
-    background-attachment: scroll;
     font-family: 'Roboto Mono', monospace;
     height: 100vh;
     width: 100vw;
     text-decoration: none;
-   
+    position: fixed;
 }
 
 .recargarbt{
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    font-family: 'Hammersmith One', sans-serif;
-}
-.recargarbt:hover{
-    background:rgb(255, 0, 0, 0.5);
-    color: rgb(0, 0, 0);
-}
-
-.h1{
-    color: rgb(244, 248, 8);
-    font-family: 'Pokemon Hollow';
-    
-
-}
-.crear{
-    
-    top: 92%;
-    left: 50%;
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -38,13 +17,43 @@
     background-color: transparent;
     color: rgb(244, 248, 8);
     font-size: larger;
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     height: 40px;
+    position: fixed;
+}
+.recargarbt:hover{
+    background:rgba(244, 248, 8);
+    color: rgb(0, 0, 0);
 }
 
-.crear:hover{
-    background:rgb(255, 0, 0, 0.5);
-    color: white;
+.h1{
+    color: rgb(244, 248, 8);
+    font-family: 'Roboto Mono', monospace;
+
+}
+.boton{
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(244, 248, 8);
+    background-color: transparent;
+    color: rgb(244, 248, 8);
+    font-size: larger;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px 20px;
 }
 
+.boton:hover{
+    background:rgba(244, 248, 8);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
 
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
+}
+.filtro {
+    display: flex;
+    gap: 20px;
+}
